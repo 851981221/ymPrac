@@ -11,7 +11,12 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 /**
  * https://www.cnblogs.com/0201zcr/p/5942748.html
  * Redis distributed lock implementation.
+ *
+ * 1. 由于是客户端自己生成过期时间，所以需要强制要求分布式下每个客户端的时间必须同步。
+ * 2. 当锁过期的时候，如果多个客户端同时执行jedis.getSet()方法，那么虽然最终只有一个客户端可以加锁，但是这个客户端的锁的过期时间可能被其他客户端覆盖。
+ * 3. 锁不具备拥有者标识，即任何客户端都可以解锁。
  */
+@Deprecated
 public class RedisLock {
 
     private final static Logger logger = LoggerFactory.getLogger(RedisLock.class);
@@ -159,7 +164,7 @@ public class RedisLock {
                 //获取上一个锁到期时间，并设置现在的锁到期时间，
                 //只有一个线程才能获取上一个线上的设置时间，因为jedis.getSet是同步的
                 if (oldValueStr != null && oldValueStr.equals(currentValueStr)) {
-                    //防止误删（覆盖，因为key是相同的）了他人的锁——这里达不到效果，这里值会被覆盖，但是因为什么相差了很少的时间，所以可以接受
+                    //防止误删（覆盖，因为key是相同的）了他人的锁——TODO 这里达不到效果，这里值会被覆盖，但是因为什么相差了很少的时间，所以可以接受
 
                     //[分布式的情况下]:如过这个时候，多个线程恰好都到了这里，但是只有一个线程的设置值和当前值相同，他才有权利获取锁
                     // lock acquired

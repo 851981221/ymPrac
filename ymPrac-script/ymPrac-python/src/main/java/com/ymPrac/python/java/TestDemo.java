@@ -26,5 +26,8 @@ public class TestDemo {
         PythonInterpreter interpreter = new PythonInterpreter();
         interpreter.exec("days=('mod','Tue','Wed','Thu','Fri','Sat','Sun'); ");
         interpreter.exec("print days[1];");
+
+        System.out.println(65534 & 1);
+
     }
 }

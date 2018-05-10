@@ -16,6 +16,7 @@
     <modules>
         <module>spring-statemachine</module>
         <module>simple-statemachine</module>
+        <module>spring-Statemachine-jpa</module>
     </modules>
 
 </project>
