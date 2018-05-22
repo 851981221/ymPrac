@@ -7,6 +7,9 @@ import redis.clients.jedis.Jedis;
 /**
  * http://www.cnblogs.com/linjiqin/p/8003838.html
  *
+ * https://wudashan.cn/2017/10/23/Redis-Distributed-Lock-Implement/#%E5%8F%82%E8%80%83%E9%98%85%E8%AF%BB
+ * 如果你的项目中Redis是多机部署的，那么可以尝试使用Redisson实现分布式锁，这是Redis官方提供的Java组件，链接在参考阅读章节已经给出。
+ *
  * @author Yan Meng
  * @date 2018/4/16
  */
