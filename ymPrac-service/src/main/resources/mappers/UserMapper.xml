@@ -6,4 +6,16 @@
         SELECT COUNT(1)
         FROM `user`
     </select>
+
+    <select id="selectUseDolar" resultType="java.lang.Integer">
+        SELECT COUNT(1)
+        FROM `user`
+        WHERE id = ${houseCode}
+    </select>
+
+    <select id="selectUseHashtag" resultType="java.lang.Integer">
+        SELECT COUNT(1)
+        FROM `user`
+        WHERE id = ${houseCode}
+    </select>
 </mapper>

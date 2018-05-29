@@ -18,4 +18,11 @@ public class UserMapperTest extends BaseTest {
 
         System.out.println(count);
     }
+
+    @Test
+    public void testSelect() {
+        userMapper.selectUseDolar("123456");
+
+        userMapper.selectUseHashtag("123456");
+    }
 }

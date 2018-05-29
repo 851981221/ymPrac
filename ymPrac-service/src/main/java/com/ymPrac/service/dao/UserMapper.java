@@ -6,4 +6,8 @@ package com.ymPrac.service.dao;
 public interface UserMapper {
 
     int countAll();
+
+    int selectUseDolar(String houseCode);
+
+    int selectUseHashtag(String houseCOde);
 }
