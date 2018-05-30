@@ -35,6 +35,7 @@
         <module>ymPrac-storm2x</module>
         <module>ymPrac-jedisLock</module>
         <module>ymPrac-BTrace</module>
+        <module>ymPrac-lucene</module>
     </modules>
     <properties>
         <!--指定编码-->
