@@ -21,6 +21,7 @@
         <module>ymPrac-service</module>
         <module>ymPrac-springSecurity</module>
         <module>ymPrac-web</module>
+        <module>ymPrac-webFlux</module>
     </modules>
 
 </project>
