@@ -9,7 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ymPrac-concurrent</artifactId>
+    <artifactId>ymPrac-io</artifactId>
 
-
+    <modules>
+        <module>ymPrac-mina</module>
+        <module>ymPrac-netty</module>
+    </modules>
 </project>

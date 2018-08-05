@@ -7,14 +7,20 @@
         <groupId>com.ymPrac</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>ymPrac-boot</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
 
     <modules>
+        <module>ymPrac-biz</module>
+        <module>ymPrac-common</module>
         <module>ymPrac-mq</module>
-        <module>ymPrac-web</module>
         <module>ymPrac-service</module>
         <module>ymPrac-springSecurity</module>
+        <module>ymPrac-web</module>
     </modules>
+
 </project>

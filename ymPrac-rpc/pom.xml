@@ -9,13 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ymPrac-script</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>ymPrac-script-js</module>
-        <module>ymPrac-Grovy</module>
-        <module>ymPrac-python</module>
-    </modules>
+    <artifactId>ymPrac-rpc</artifactId>
 
+    <modules>
+        <module>ymPrac-dubbo</module>
+        <module>ymPrac-grpc</module>
+        <module>ymPrac-thrift</module>
+    </modules>
 
 </project>

@@ -1,4 +1,4 @@
-package com.ymPrac.dubbo.annotation.consumer.conf;
+package com.ymPrac.dubbo.annotation.consumer.conf.not_use;
 
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ConsumerConfig;
