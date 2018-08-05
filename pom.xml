@@ -13,10 +13,7 @@
         <module>ymPrac-effective</module>
         <module>ymPrac-concurrent</module>
         <module>ymPrac-common</module>
-        <module>ymPrac-web</module>
-        <module>ymPrac-service</module>
         <module>ymPrac-biz</module>
-        <module>ymPrac-mq</module>
         <module>ymPrac-dubbo</module>
         <module>ymPrac-netty</module>
         <module>ymPrac-drools</module>
@@ -37,6 +34,7 @@
         <module>ymPrac-BTrace</module>
         <module>ymPrac-lucene</module>
         <module>ymPrac-Hytrix</module>
+        <module>ymPrac-boot</module>
     </modules>
     <properties>
         <!--指定编码-->
