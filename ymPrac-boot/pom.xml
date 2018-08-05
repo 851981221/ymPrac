@@ -15,5 +15,6 @@
         <module>ymPrac-mq</module>
         <module>ymPrac-web</module>
         <module>ymPrac-service</module>
+        <module>ymPrac-springSecurity</module>
     </modules>
 </project>
