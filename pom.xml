@@ -26,6 +26,7 @@
         <module>ymPrac-boot</module>
         <module>ymPrac-rpc</module>
         <module>ymPrac-io</module>
+        <module>ymPrac-algorithma</module>
     </modules>
     <properties>
         <!--指定编码-->
