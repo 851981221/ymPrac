@@ -24,7 +24,7 @@ public class TwoDimensionalArraySearch {
         int colCount = array.length;
         int rowCount = array[0].length;
 
-        for (int i=0, j=rowCount; i<colCount-1 && j>=0;) {
+        for (int i=0, j=rowCount-1; i<colCount && j>=0;) {
             int number = array[i][j];
             if (number == target) {
                 return true;
